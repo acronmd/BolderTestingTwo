@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-cloudflare": "^2.3.0",
 		"@sveltejs/kit": "^1.20.4",
 		"autoprefixer": "^10.4.14",
 		"eslint": "^8.28.0",
@@ -38,5 +39,4 @@
 		"svelte-fullscreen": "^2.0.0",
 		"tailwind-merge": "^1.13.2"
 	}
-	
 }
