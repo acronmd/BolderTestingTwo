@@ -34,6 +34,7 @@ html, body {
 }
 
 .full-height {
+  overflow: visible;
   height: 100%;
 }
 
