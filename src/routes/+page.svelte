@@ -22,24 +22,44 @@
 </script>
 
 <main>
-  <div class="full-height" >
-    <CarouselTransition {images} classDiv="overflow-visible relative h-100" loop transitionType="fly" transitionParams="{{delay: 250, duration: 1000}}" showCaptions={false} showThumbs={false} showIndicators={false} slideControls={false} duration={length}/>
+  <div class="carousel-container">
+    <CarouselTransition
+      {images}
+      classDiv="overflow-visible relative h-100"
+      loop
+      transitionType="fly"
+      transitionParams="{{ delay: 250, duration: 1000 }}"
+      showCaptions={false}
+      showThumbs={false}
+      showIndicators={false}
+      slideControls={false}
+      duration={length}
+    />
   </div>
 </main>
 
 <style>
+  .carousel-container {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
 
-html, body {
-  height: 100%;
-}
+  .carousel-container::-webkit-scrollbar {
+    width: 10px;
+  }
 
-.full-height {
-  overflow: visible;
-  height: 100%;
-}
+  .carousel-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 
-.full-height::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
-}
+  .carousel-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  .carousel-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 </style>
