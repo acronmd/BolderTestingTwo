@@ -41,8 +41,5 @@
 <style>
   .carousel-container {
     height: 100%;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
   }
 </style>
