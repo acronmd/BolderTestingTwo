@@ -25,7 +25,7 @@
   <div class="carousel-container">
     <CarouselTransition
       {images}
-      classDiv="overflow-visible relative h-100"
+      classDiv="relative rounded-none h-screen sm:h-screen xl:h-screen 2xl:h-screen"
       loop
       transitionType="fly"
       transitionParams="{{ delay: 250, duration: 1000 }}"
@@ -39,22 +39,34 @@
 </main>
 
 <style>
-  .carousel-container {
-    scrollbar-width: none;
+  body {
     height: 100%;
-    
+  }
+
+  .carousel-container {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    height: 100%;
+    overflow: visible;
   }
 
   .carousel-container::-webkit-scrollbar {
-    display: none;
+    width: 10px;
   }
 
-  *::-webkit-scrollbar {
-  display: none;
+  .carousel-container::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 
-  * {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  .carousel-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  .carousel-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-container:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
