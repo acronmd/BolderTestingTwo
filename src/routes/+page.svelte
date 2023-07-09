@@ -45,21 +45,4 @@
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
   }
-
-  .carousel-container::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  .carousel-container::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  .carousel-container::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-
-  .carousel-container::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
 </style>
