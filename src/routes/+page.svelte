@@ -30,7 +30,6 @@
 <style>
 
 html, body {
-  overflow: hidden;
   height: 100%;
 }
 
