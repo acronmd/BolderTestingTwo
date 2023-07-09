@@ -5,7 +5,7 @@
     import Fullscreen from "svelte-fullscreen";
     import { onMount } from 'svelte';
 
-    let length = 15000
+    let length = 18000
 
     onMount(() => {
     function handleClick() {
