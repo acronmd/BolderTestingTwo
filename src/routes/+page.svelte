@@ -5,7 +5,7 @@
     import Fullscreen from "svelte-fullscreen";
     import { onMount } from 'svelte';
 
-    let length = 18000
+    let length = 16000
 
     onMount(() => {
     function handleClick() {
@@ -23,7 +23,7 @@
 
 <main>
   <div class="full-height" >
-    <CarouselTransition {images} classDiv="overflow-hidden relative h-100" loop transitionType="fly" transitionParams="{{delay: 250, duration: 1000}}" showCaptions={false} showThumbs={false} showIndicators={false} slideControls={false} duration={length}/>
+    <CarouselTransition {images} classDiv="overflow-visible relative h-100" loop transitionType="fly" transitionParams="{{delay: 250, duration: 1000}}" showCaptions={false} showThumbs={false} showIndicators={false} slideControls={false} duration={length}/>
   </div>
 </main>
 
