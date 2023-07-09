@@ -46,5 +46,6 @@
 
   .carousel-container::-webkit-scrollbar {
     width: 0;
+    background-color: transparent;
   }
 </style>
