@@ -34,7 +34,11 @@ html, body {
 }
 
 .full-height {
-  overflow: hidden;
   height: 100%;
+}
+
+.full-height::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }
 </style>
