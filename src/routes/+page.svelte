@@ -40,12 +40,12 @@
 
 <style>
   .carousel-container {
+    scrollbar-width: none;
     height: 100%;
     
   }
 
   .carousel-container::-webkit-scrollbar {
-    width: 0;
-    background-color: transparent;
+    display: none;
   }
 </style>
