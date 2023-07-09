@@ -41,5 +41,10 @@
 <style>
   .carousel-container {
     height: 100%;
+    
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    width: 0;
   }
 </style>
